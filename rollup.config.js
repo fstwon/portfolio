@@ -13,12 +13,14 @@ import autoprefixer from "autoprefixer";
 import svg from "rollup-plugin-svg";
 import svgr from "@svgr/rollup";
 import postcssUrl from "postcss-url";
+import dotenv from "dotenv";
+
 
 const extensions = ['.js', '.jsx', '.ts', '.tsx'];
-
+dotenv.config();
+const DEV_MODE = process.env.DEV_MODE
 // module 확장하게되면 cjs, esm 모듈 분리해서 설정해야 함 
 function setRollupConfig(input, output, format) {
-  const DEV_MODE = process.env.DEV_MODE;
   const config = {
     input: './src/index.tsx',
     output: {
