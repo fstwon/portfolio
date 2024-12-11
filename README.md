@@ -10,5 +10,3 @@
 > - esLint, Prettier
 > 5. 초기 화면 미리 보기(Netlify), preview initial page
 > - https://bpbyfst.netlify.app
-
-

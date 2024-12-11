@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "dev": "DEV_MODE=true rollup -cw",
-    "build": "rollup -c",
+    "build": "DEV_MODE=false rollup -c",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "fstwon",
