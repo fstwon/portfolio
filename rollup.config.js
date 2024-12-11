@@ -18,6 +18,7 @@ const extensions = ['.js', '.jsx', '.ts', '.tsx'];
 
 // module 확장하게되면 cjs, esm 모듈 분리해서 설정해야 함 
 function setRollupConfig(input, output, format) {
+  const DEV_MODE = process.env.DEV_MODE;
   const config = {
     input: './src/index.tsx',
     output: {
@@ -67,13 +68,11 @@ function setRollupConfig(input, output, format) {
       svg(),
       svgr(),
       replace({
-        'process.env.NODE_ENV': JSON.stringify('production'),
+        'process.env.NODE_ENV': DEV_MODE ? JSON.stringify('development') : JSON.stringify('production'),
         preventAssignment: true
       }),
-      livereload({
-        watch: 'dist'
-      }),
-      serve({
+      DEV_MODE && livereload({ watch: 'dist' }),
+      DEV_MODE && serve({
         open: true,
         contentBase: ['dist'],
         port: 3000,
