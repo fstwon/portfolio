@@ -5,8 +5,9 @@
   "main": "./dist/bundle.js",
   "type": "module",
   "scripts": {
-    "dev": "DEV_MODE=true rollup -cw",
-    "build": "DEV_MODE=false rollup -c",
+    "dev": "rollup -cw",
+    "build:dev": "DOT_ENV_CONFIG_PATH=.env.development rollup -cw",
+    "build:prod": "DOT_ENV_CONFIG_PATH=.env.production rollup -c",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "fstwon",
@@ -15,6 +16,7 @@
     "rollup": "^4.18.0"
   },
   "devDependencies": {
+    "nodemon": "^3.1.7",
     "@babel/cli": "^7.24.7",
     "@babel/core": "^7.24.7",
     "@babel/plugin-transform-runtime": "^7.24.7",
