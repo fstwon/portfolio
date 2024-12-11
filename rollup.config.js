@@ -22,7 +22,7 @@ function setRollupConfig(input, output, format) {
     input: './src/index.tsx',
     output: {
       file: './dist/bundle.js',
-      format: 'iife',
+      format: 'cjs',
       sourcemap: true
     },
     watch: {
