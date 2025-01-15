@@ -14,7 +14,7 @@ function App() {
 
   return (
     <div className="App" >
-      <h1 className="very_first_text" >Hello World</h1>
+      <h1 className="very_first_text" >포트폴리오 작업 시작</h1>
     </div>
   )
 };

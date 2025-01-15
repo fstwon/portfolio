@@ -3,6 +3,7 @@ node_modules
 
 # dist
 dist/
+dist/**
 
 # env, 환경 변수 
 .env
