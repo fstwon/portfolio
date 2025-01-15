@@ -8,5 +8,3 @@
 > - Babel
 > 4. 사용 툴, tool 
 > - esLint, Prettier
-> 5. 초기 화면 미리 보기(Netlify), preview initial page on Netlify
-> - https://bpbyfst.netlify.app
