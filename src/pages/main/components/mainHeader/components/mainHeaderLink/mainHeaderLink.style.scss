@@ -1,0 +1,8 @@
+@import "../../../../../../styleSheets.style.scss";
+
+.main_header_link {
+  @include fc_FA_1E;
+  &:hover {
+    @include fc_1E_FA;
+  }
+}

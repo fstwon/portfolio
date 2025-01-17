@@ -1,9 +1,11 @@
 import { useSelector } from "react-redux";
 import { RootState } from "./redux/Root.redux";
-import { useEffect } from "react";
-import "./app.styles.scss";
+import { ReactNode, useEffect } from "react";
+import { MainPage } from "./pages/main/main.page";
+import { MainHeader } from "./pages/main/components/mainHeader/mainHeader.component";
+import "./app.style.scss";
 
-function App() {
+function App():ReactNode {
   const { IS_INIT_RENDER } = useSelector((state: RootState) => state.AppReducer);
 
   useEffect(() => {
@@ -14,7 +16,9 @@ function App() {
 
   return (
     <div className="App" >
-      <h1 className="very_first_text" >포트폴리오 작업 시작</h1>
+      <MainHeader />
+      <MainPage />
+      {/* footer */}
     </div>
   )
 };

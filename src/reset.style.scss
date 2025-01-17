@@ -1,5 +1,5 @@
 @charset "utf-8";
-@import "./styleSheets.styles.scss";
+@import "./styleSheets.style.scss";
 
 // 폰트 설정 
 // 한국어
@@ -27,13 +27,6 @@
 }
 
 body {
-  width: 100vw;
-  height: 100vh;
   font-family: "Noto Sans KR", "Noto Sans", sans-serif;
-}
-
-// a 태그 스타일 초기화
-a {
-	text-decoration:none;
-	outline : none;
+  @include bc_FA_1E;
 }

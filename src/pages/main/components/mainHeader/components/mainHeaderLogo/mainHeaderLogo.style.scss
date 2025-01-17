@@ -1,0 +1,14 @@
+@import "../../../../../../styleSheets.style.scss";
+
+.main_header_logo_link {
+  display: inline-block;
+  width: 121px;
+  height: 100%;
+  @include fc_FA_1E;
+  
+  .main_header_logo_container {
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+}
