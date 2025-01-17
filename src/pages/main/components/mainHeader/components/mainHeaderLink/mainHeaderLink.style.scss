@@ -5,4 +5,8 @@
   &:hover {
     @include fc_1E_FA;
   }
+  &.active {
+    @include bc_FA_1E;
+    @include fc_1E_FA;
+  }
 }
