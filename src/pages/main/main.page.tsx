@@ -1,6 +1,7 @@
 import { Navigate, Route, Routes } from "react-router-dom";
 import { IMainPage, useMainPageList } from "./hooks/useMainPageList.hook";
 import { ReactNode } from "react";
+import "./main.style.scss";
 
 type TclassName = string;
 const className:TclassName = 'main_page_container';
