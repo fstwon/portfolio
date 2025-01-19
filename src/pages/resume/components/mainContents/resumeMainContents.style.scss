@@ -1,0 +1,17 @@
+@import '../../../../styleSheets.style.scss';
+
+.resume_main_contents_container {
+	.resume_main_contents_secion {
+		margin-bottom: 12px;
+		.resume_main_contents_title {
+			padding: 8px;
+			font-size: 24px;
+			font-weight: 900;
+			border-bottom: 1px solid;
+			@include lc_CB_FA;
+		}
+		.resume_main_contents_list {
+			padding: 8px 0;
+		}
+	}
+}

@@ -1,0 +1,29 @@
+.resume_aside_section.skill-set {
+	.resume_skill-set_list {
+		display: flex;
+		justify-content: space-between;
+		list-style-type: none;
+		padding: 0;
+
+		.resume_skill-set {
+			margin-bottom: 16px;
+			.resume_skill-set_title {
+				display: flex;
+				align-items: center;
+				margin-bottom: 12px;
+				.resume_skill-set_title_icon {
+					width: 20px;
+					height: 20px;
+					margin-right: 8px;
+				}
+			}
+			.resume_skill-set_icon_list {
+				.resume_skill-set_icon {
+					width: 40px;
+					height: 40px;
+					margin-right: 12px;
+				}
+			}
+		}
+	}
+}

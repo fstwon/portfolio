@@ -1,0 +1,40 @@
+@import '../../../../../../styleSheets.style.scss';
+
+.resume_aside_section.contact {
+	margin-bottom: 16px;
+	.resume_contact_jop_des_icon {
+		width: 32px;
+		height: 32px;
+		margin-right: 12px;
+	}
+	.resume_contact_jop_des {
+		display: flex;
+		align-items: center;
+		margin-bottom: 12px;
+	}
+	.resume_contact_name_container {
+		margin-bottom: 12px;
+		.resume_contact_name {
+			&.eng {
+				vertical-align: bottom;
+			}
+		}
+	}
+	.resume_contact_icon_list {
+		display: flex;
+		align-items: center;
+		width: 100%;
+
+		.resume_contact_icon {
+			width: 40px;
+			height: 40px;
+			margin-right: 12px;
+			cursor: pointer;
+			@include fc_1E_FA;
+			&.blog {
+				width: 36px;
+				height: 36px;
+			}
+		}
+	}
+}

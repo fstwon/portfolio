@@ -1,0 +1,19 @@
+@import './../../../../../../../../../../styleSheets.style.scss';
+
+.resume_career_item_company_title_container {
+	display: flex;
+	align-items: center;
+	font-size: 24px;
+	font-weight: 900;
+	margin-bottom: 8px;
+	.resume_career_item_company_link {
+		display: inline-flex;
+		align-items: center;
+		margin-left: 8px;
+		.resume_career_item_company_link_icon {
+			width: 28px;
+			height: 28px;
+			@include fc_6c7a89;
+		}
+	}
+}

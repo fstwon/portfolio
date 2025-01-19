@@ -1,0 +1,10 @@
+@import '../../../../../../../../../../styleSheets.style.scss';
+
+.resume_project_tech_badges {
+	margin-bottom: 8px;
+	.resume_project_tech_badge {
+		margin-right: 4px;
+		@include bc_1ABC9C;
+		@include fc_FA_1E;
+	}
+}
