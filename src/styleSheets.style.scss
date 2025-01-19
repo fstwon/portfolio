@@ -1,62 +1,92 @@
 // 폰트 컬러
 @mixin fc_1E_FA {
-  & {
-    color: #1E2022;
-  }
-  @at-root .darkmode {
-    color: #FAFAFA;
-  }
+	& {
+		color: #1e2022;
+	}
+	@at-root .darkmode {
+		color: #fafafa;
+	}
 }
 
 @mixin fc_FA_1E {
-  & {
-    color: #FAFAFA;
-  }
+	& {
+		color: #fafafa;
+	}
 
-  @at-root .darkmode {
-    color: #1E2022;
-  }
+	@at-root .darkmode {
+		color: #1e2022;
+	}
+}
+@mixin fc_6c7a89 {
+	& {
+		color: #6c7a89;
+	}
 }
 
+@mixin fc_ffd700 {
+	& {
+		color: #ffd700;
+	}
+}
 
+@mixin fc_1D2A3A {
+	& {
+		color: #1d2a3a;
+	}
+}
+@mixin fc_1ABC9C {
+	& {
+		color: #1abc9c;
+	}
+}
 // 백그라운드 컬러
 @mixin bc_FA_1E {
-  & {
-    background-color: #FAFAFA;
-  }
-  @at-root .darkmode {
-    background-color: #1E2022;
-  }
+	& {
+		background-color: #fafafa;
+	}
+	@at-root .darkmode {
+		background-color: #1e2022;
+	}
 }
 @mixin bc_1E_FA {
-  & {
-    background-color: #1E2022;
-  }
-  @at-root .darkmode {
-    background-color: #FAFAFA;
-  }
+	& {
+		background-color: #1e2022;
+	}
+	@at-root .darkmode {
+		background-color: #fafafa;
+	}
 }
 @mixin bc_6C {
-  background-color: #6C7A89;
+	background-color: #6c7a89;
 }
 @mixin bc_transparent {
-  background-color: transparent;
+	background-color: transparent;
 }
 
 @mixin bc_1E {
-  background-color: #1E2022;
+	background-color: #1e2022;
 }
 
 @mixin bc_FA {
-  background-color: #FAFAFA;
+	background-color: #fafafa;
 }
 
+@mixin bc_ffd700 {
+	& {
+		background-color: #ffd700;
+	}
+}
+@mixin bc_1ABC9C {
+	& {
+		background-color: #1abc9c;
+	}
+}
 // 보더 컬러
 @mixin lc_CB_FA {
-  & {
-    border-color: #CBD0D8;
-  }
-  @at-root .darkmode {
-    border-color: #FAFAFA;
-  }
+	& {
+		border-color: #cbd0d8;
+	}
+	@at-root .darkmode {
+		border-color: #fafafa;
+	}
 }

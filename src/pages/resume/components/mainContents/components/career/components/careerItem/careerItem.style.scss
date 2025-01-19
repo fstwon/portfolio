@@ -1,0 +1,19 @@
+@import '../../../../../../../../styleSheets.style.scss';
+
+.resume_career_item {
+	display: flex;
+
+	.resume_career_item_des_container {
+		.resume_career_item_badge {
+			margin-bottom: 8px;
+			@include bc_ffd700;
+			@include fc_FA_1E;
+		}
+		.resume_career_item_project_container {
+			.title {
+				font-size: 14px;
+				font-weight: 900;
+			}
+		}
+	}
+}
