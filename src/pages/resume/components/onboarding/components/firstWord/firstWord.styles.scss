@@ -1,0 +1,6 @@
+@import "../../onboarding.style.scss";
+
+.onboarding_page_first_word {
+  margin-right: 30px;
+  @include name_default_styles;
+}

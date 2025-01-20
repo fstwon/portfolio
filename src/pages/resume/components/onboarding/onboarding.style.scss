@@ -1,0 +1,56 @@
+@import "../../../../styleSheets.style.scss";
+
+.onboarding_section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 100px;
+  height: 100vh;
+  @include bc_1E;
+  @include fc_FA_1E;
+
+  .onboarding_page_intro_section {
+    display: block;
+    font-size: 20px;
+    animation: smooth_opacity_hidden 2000ms ease-in;
+    opacity: 0;
+  }
+  .onboarding_page_name_section {
+    display: flex;
+  }
+
+  &.hidden_trans {
+    opacity: 0;
+    transition: opacity 500ms linear 1500ms;
+  }
+}
+
+
+@mixin name_default_styles {
+  $NAME_FONT_WEIGHT: 800;
+  display: inline-block;
+  animation: smooth_opacity 2000ms ease-in;
+  font-weight: $NAME_FONT_WEIGHT;
+  user-select: none;
+}
+
+@keyframes smooth_opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes smooth_opacity_hidden {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
