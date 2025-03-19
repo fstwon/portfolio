@@ -19,7 +19,7 @@ function App(): ReactNode {
     <div className="App">
       <MainHeader />
       <MainPage />
-      무언가 수정
+      수정사항
       {/* footer */}
     </div>
   );
