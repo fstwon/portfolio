@@ -5,22 +5,24 @@ import { MainPage } from "./pages/main/main.page";
 import { MainHeader } from "./pages/main/components/mainHeader/mainHeader.component";
 import "./app.style.scss";
 
-function App():ReactNode {
-  const { IS_INIT_RENDER } = useSelector((state: RootState) => state.AppReducer);
+function App(): ReactNode {
+  const { IS_INIT_RENDER } = useSelector(
+    (state: RootState) => state.AppReducer
+  );
 
   useEffect(() => {
-    if(!IS_INIT_RENDER) {
-
+    if (!IS_INIT_RENDER) {
     }
-  }, [IS_INIT_RENDER])
+  }, [IS_INIT_RENDER]);
 
   return (
-    <div className="App" >
+    <div className="App">
       <MainHeader />
       <MainPage />
+      무언가 수정
       {/* footer */}
     </div>
-  )
-};
+  );
+}
 
 export default App;
